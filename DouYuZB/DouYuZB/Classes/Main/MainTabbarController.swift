@@ -14,7 +14,18 @@ class MainTabbarController: UITabBarController {
         super.viewDidLoad()
 
         // Do any additional setup after loading the view.
+        addChile(name: "Home")
+        addChile(name: "Live")
+        addChile(name: "Follow")
+        addChile(name: "Mine")
     }
+    
+    func addChile(name:String) {
+        let childVC = UIStoryboard.init(name: name, bundle: nil).instantiateInitialViewController()!
+        addChildViewController(childVC)
+        
+    }
+    
 
     override func didReceiveMemoryWarning() {
         super.didReceiveMemoryWarning()
