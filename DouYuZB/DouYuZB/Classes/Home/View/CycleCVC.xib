@@ -1,0 +1,67 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="13771" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="13772"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <collectionViewCell opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" id="gTV-IL-0wX" customClass="CycleCVC" customModule="DouYuZB" customModuleProvider="target">
+            <rect key="frame" x="0.0" y="0.0" width="375" height="150"/>
+            <autoresizingMask key="autoresizingMask"/>
+            <view key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center">
+                <rect key="frame" x="0.0" y="0.0" width="375" height="150"/>
+                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                <subviews>
+                    <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="Img_default" translatesAutoresizingMaskIntoConstraints="NO" id="Oxh-32-AW5">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="150"/>
+                    </imageView>
+                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="cTR-z4-dMh">
+                        <rect key="frame" x="0.0" y="120" width="375" height="30"/>
+                        <subviews>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="这是一个轮播图" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="j3W-nz-XqI">
+                                <rect key="frame" x="10" y="0.0" width="355" height="30"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="13"/>
+                                <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                        </subviews>
+                        <color key="backgroundColor" white="0.0" alpha="0.29999999999999999" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <constraints>
+                            <constraint firstAttribute="trailing" secondItem="j3W-nz-XqI" secondAttribute="trailing" constant="10" id="2Eg-lL-Fkx"/>
+                            <constraint firstItem="j3W-nz-XqI" firstAttribute="top" secondItem="cTR-z4-dMh" secondAttribute="top" id="4rF-GJ-0lT"/>
+                            <constraint firstAttribute="height" constant="30" id="Mkc-Sj-k4j"/>
+                            <constraint firstAttribute="bottom" secondItem="j3W-nz-XqI" secondAttribute="bottom" id="PEC-eW-1dJ"/>
+                            <constraint firstItem="j3W-nz-XqI" firstAttribute="leading" secondItem="cTR-z4-dMh" secondAttribute="leading" constant="10" id="ZSe-Xe-mac"/>
+                        </constraints>
+                    </view>
+                </subviews>
+            </view>
+            <constraints>
+                <constraint firstItem="cTR-z4-dMh" firstAttribute="leading" secondItem="gTV-IL-0wX" secondAttribute="leading" id="0dl-kh-lUw"/>
+                <constraint firstItem="Oxh-32-AW5" firstAttribute="top" secondItem="gTV-IL-0wX" secondAttribute="top" id="8B2-zA-Ma8"/>
+                <constraint firstAttribute="trailing" secondItem="cTR-z4-dMh" secondAttribute="trailing" id="C6I-k9-g45"/>
+                <constraint firstAttribute="bottom" secondItem="cTR-z4-dMh" secondAttribute="bottom" id="Ryz-nj-hEj"/>
+                <constraint firstAttribute="trailing" secondItem="Oxh-32-AW5" secondAttribute="trailing" id="hkD-ti-TZV"/>
+                <constraint firstAttribute="bottom" secondItem="Oxh-32-AW5" secondAttribute="bottom" id="vau-t6-2fm"/>
+                <constraint firstItem="Oxh-32-AW5" firstAttribute="leading" secondItem="gTV-IL-0wX" secondAttribute="leading" id="wYT-IZ-8Lg"/>
+            </constraints>
+            <viewLayoutGuide key="safeArea" id="ZTg-uK-7eu"/>
+            <size key="customSize" width="288" height="107"/>
+            <connections>
+                <outlet property="imgView" destination="Oxh-32-AW5" id="ryo-1k-0j7"/>
+                <outlet property="titleLab" destination="j3W-nz-XqI" id="rr2-me-28g"/>
+            </connections>
+            <point key="canvasLocation" x="152.5" y="82"/>
+        </collectionViewCell>
+    </objects>
+    <resources>
+        <image name="Img_default" width="172" height="103"/>
+    </resources>
+</document>

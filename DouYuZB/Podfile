@@ -1,0 +1,14 @@
+# Uncomment the next line to define a global platform for your project
+# Comment the next line if you're not using Swift and don't want to use dynamic frameworks
+
+platform :ios, '8.0'
+
+target 'DouYuZB' do
+  use_frameworks!
+
+  # Pods for DouYuZB
+
+pod 'Alamofire'
+pod 'SwiftyJSON'
+pod 'Kingfisher'
+end
